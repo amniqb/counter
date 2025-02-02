@@ -1,7 +1,7 @@
 # Counter 
 ![Screenshot 2025-02-01 214014](https://github.com/user-attachments/assets/5f8619bb-aa60-47b9-bf8d-d408251f8463)
 <h2>About the project</h2>
-This is a project I built for [Start2Impact](https://www.start2impact.it/) frontend development course. The task was to develop a simple counter that increases
+This is my second project built for the online Frontend Developer course by [Start2Impact](https://www.start2impact.it/). The task was to develop a simple counter that increases
 or decreases the value of a certain number by one. This project allowed me to implement the basics of JavaScript I learned thanks to the course. To this I added various themes
 to pick from and a simple function that shows the current date.
 
