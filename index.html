@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    
+    <title>Counter</title>
+
+    <meta property="og:title" content="A counter"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="A simple counter that can increase or decrease the count by one" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="img/favicon.svg"/>
+
+</head>
+
+<body>
+
+    <form class="color-picker" action="">
+        <fieldset>
+            <legend class="visually-hidden">Pick a color scheme</legend>
+            <label for="light" class="visually-hidden"></label>
+            <input type="radio" name="theme" id="light" checked>
+
+            <label for="dark" class="visually-hidden"></label>
+            <input type="radio" name="theme" id="dark" checked>
+
+            <label for="pink" class="visually-hidden"></label>
+            <input type="radio" name="theme" id="pink" checked>
+
+            <label for="blue" class="visually-hidden"></label>
+            <input type="radio" name="theme" id="blue" checked>
+        </fieldset>
+    </form>
+
+    <div id="counter">0</div>
+    <div id="buttonContainer">
+        <button id="decreaseButton">Decrease</button>
+        <button id="resetButton">Reset</button>
+        <button id="increaseButton">Increase</button>
+    </div>
+
+    <footer id="dateAndTime"></footer>
+  
+    <script src="main.js" defer></script>
+</body>
+
+</html>

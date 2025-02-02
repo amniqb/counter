@@ -1,0 +1,140 @@
+
+/* counter */
+#counter{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--clr-text);
+    background-color: var(--clr-button);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+button:hover {
+    background-color: var(--clr-hover)
+}
+
+
+  /* color picker */
+
+  .color-picker > fieldset {
+    border: 0;
+    display: flex;
+    gap: 2rem;
+    background-color: #fff;
+    width: fit-content;
+    padding: 1rem 3rem;
+    border-radius: 0 0 1rem 1rem;
+    margin-inline: auto; 
+    margin-bottom: 5rem;
+  }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  body {
+    margin: 0;
+    background: var(--clr-body-bg);
+    color: var(--clr-text);
+  }
+
+  .color-picker input[type="radio"] {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid var(--radio-color, currentColor);
+    border-radius: 50%
+  }
+
+.color-picker input[type="radio"]:checked {
+    background-color: var(--radio-color);
+}
+
+.color-picker input[type="radio"]#pink {
+    --radio-color: #FB9AD1;
+} 
+
+.color-picker input[type="radio"]#blue {
+    --radio-color:blue;
+} 
+
+.color-picker input[type="radio"]#light {
+    --radio-color: #9AA6B2;
+} 
+
+.color-picker input[type="radio"]#dark {
+    --radio-color:rgb(36, 36, 36);
+} 
+
+.pink {
+    --clr-body-bg: #FFCDEA;
+    --clr-text: #714180;
+    --clr-button: #FB9AD1;
+    --clr-hover: #f47abf; 
+  }
+  
+  .blue {
+    --clr-body-bg: #A1E3F9;
+    --clr-text: #19487b;
+    --clr-button: #578FCA;
+    --clr-hover: #3375bb; 
+  }
+
+  
+  .dark {
+    --clr-body-bg: rgb(36, 36, 36);
+    --clr-text: rgba(253, 253, 253, 0.948);
+    --clr-button: #9AA6B2;
+    --clr-hover: #7e8c9a; 
+  }
+  
+  .light {
+    --clr-body-bg: #F8FAFC;
+    --clr-text: rgb(36, 36, 36);
+    --clr-button: #9AA6B2;
+    --clr-hover: #7e8c9a; 
+  }
+
+  /* footer */
+  footer  {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6rem;
+    margin-right: 1.5rem;
+  }
+
+
+
+  @media (min-width: 768px) {
+    
+    #buttonContainer {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    footer {
+        margin-top: 20rem;
+    }
+  }
