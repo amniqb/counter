@@ -14,7 +14,7 @@ to pick from and a simple function that shows the current date.
 
 
 
-# What I learned
+## What I learned
 Not only did I learn to apply the theoretical notions I had learned regarding the fundamentals of JavaScript - from the very basics to functions or DOM manipulation - but 
 I also had the possibility to learn more about CSS, particularly in relation to creating a theme. This gave me the right confidence to find the resources I need to add what I want to my
 projects and the ability to discern the reliable ones from the others. <br>
@@ -35,7 +35,7 @@ When it comes to Javascript, I was delighted to find a simple way to add a date 
 const dateAndTime = new Date();
 document.getElementById("dateAndTime").innerHTML= dateAndTime.toDateString();
 ```
-# Recources 
+## Recources 
 
 - [Edoardo Midali's JavaScript tutorial](https://www.youtube.com/playlist?list=PLP5MAKLy8lP9FUx06-avV66mS8LXz7_Bb)
 - [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
