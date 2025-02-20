@@ -32,8 +32,11 @@ When it comes to dealing with CSS variables, Kevin Powell's tutuorials were of g
 When it comes to Javascript, I was delighted to find a simple way to add a date to my project in my quest to make it more appealing. That being: 
 
 ```javascript
-const dateAndTime = new Date();
-document.getElementById("dateAndTime").innerHTML= dateAndTime.toDateString();
+function updateTime() {
+    document.getElementById("dateAndTime").textContent = new Date().toLocaleString();
+}
+setInterval(updateTime, 1000);
+updateTime();
 ```
 ## Recources 
 
