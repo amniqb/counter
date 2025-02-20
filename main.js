@@ -49,5 +49,9 @@ document.onload = setTheme();
 
 // date and time
 
-const dateAndTime = new Date();
-document.getElementById("dateAndTime").innerHTML= dateAndTime.toDateString();
+function updateTime() {
+    document.getElementById("dateAndTime").textContent = new Date().toLocaleString();
+}
+setInterval(updateTime, 1000);
+updateTime();
+
